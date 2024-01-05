@@ -8,9 +8,9 @@
     @vite(['resources/js/app.js'])
 </head>
 <body>
-    <div id="app" class="max-w-lg mx-auto mt-24">
+    <div class="max-w-lg mx-auto mt-24">
         <h1 class="text-4xl font-bold text-center">Image Uploader</h1>
-        <counter />
+        <div id="app"></div>
     </div>
 </body>
 </html>

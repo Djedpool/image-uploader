@@ -1,8 +1,5 @@
 import { createApp } from 'vue'
-import Counter from './components/Counter.vue'
+import App from './components/App.vue'
  
-const app = createApp()
-
-app.component('counter', Counter)
+createApp(App).mount('#app')
  
-app.mount('#app')
