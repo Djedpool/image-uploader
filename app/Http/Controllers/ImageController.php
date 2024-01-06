@@ -18,6 +18,9 @@ class ImageController extends Controller
 
     public function store()
     {
-        // save the image to the database 
+        // validate the incoming file
+        // save the file in storage
+        // create image model
+        // return that image model back to frontend
     }
 }
