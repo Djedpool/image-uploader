@@ -9,5 +9,5 @@ class Image extends Model
 {
     use HasFactory;
 
-    protected $quarder = [];
+    protected $guarded = [];
 }
