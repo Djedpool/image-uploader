@@ -6,14 +6,17 @@
             label-idle="Click to choose image, or drag here ..."
             server="/upload"
             @init="filepondInitialized"
+            :allow-browse="false"
+            accepted-file-types="image/*"
         />
     </div>
 </template>
 <script>
 import vueFilePond from 'vue-filepond'
-import "filepond/dist/filepond.min.css"
+import 'filepond/dist/filepond.min.css'
+import FilePondPluginFileValidateType from 'filepond-plugin-file-validate-type'
 
-const FilePond = vueFilePond()
+const FilePond = vueFilePond(FilePondPluginFileValidateType)
 
 export default {
     components: {
